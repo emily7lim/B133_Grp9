@@ -20,13 +20,16 @@ For detailed walkthrough, please view the source code in order from:
 
 3. Machine Learning
     - 3.1 [Basic]()
-    - 3.2 [Bert]()
+    - 3.2 [Bert Only Baseline]()
+    - 3.3 [Bert and Other Featres]()
+
+4. [Change of Learning Rate]()
   
 ## Contributors
 
-- @ - 
-- @ - 
-- @ - 
+- @EricFan2002
+- @serenawjw
+- @emily7lim
 
 ## Problem Definition
 
@@ -43,11 +46,16 @@ For detailed walkthrough, please view the source code in order from:
 
 ## Conclusion
 
-- 
+- Lyrics play a crucial role in determining a song's popularity. 
+- A successful song is not determined by only one feature but consists of many features such as loudness, energy, acousticness etc 
+- Using lyrics, features and Bert as a model achieved the best result
 
 ## What did we learn from this project?
 
-- 
+- Identifying the optimal learning rate is crucial
+- Early stopping is essential
+- Incorporating dropout layers is vital for model generalization
+- Merging of multiple datasets help to enrich data and enhance model
 
 ## References
 
