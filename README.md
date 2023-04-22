@@ -19,7 +19,7 @@ For detailed walkthrough, please view the source code in order from:
     - 2.2  [Dimension Reduction](https://github.com/emily7lim/B133_Grp9/blob/main/EDA_dimensionReduction.ipynb)
 
 3. Machine Learning
-    - 3.1 [Basic]()
+    - 3.1 [Classic]()
     - 3.2 [Bert Only Baseline]()
     - 3.3 [Bert and Other Featres]()
 
@@ -60,4 +60,6 @@ For detailed walkthrough, please view the source code in order from:
 ## References
 
 - https://developer.spotify.com/documentation/web-api/reference/get-audio-features
+- https://huggingface.co/distilbert-base-uncased
+
 - 
