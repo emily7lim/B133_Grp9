@@ -9,6 +9,12 @@ This is a Mini-Project for SC1015 (Introduction to Data Science and Artificial I
 2. This dataset consists of [lyrics](https://www.kaggle.com/datasets/nikhilnayak123/5-million-song-lyrics-dataset) from kaggle dataset. 
 
 3. This dataset consist of [popular songs](https://www.kaggle.com/datasets/dhruvildave/spotify-charts) which were in viral50 and top200.
+
+## Problem Definition
+
+- Are we able to analyze trends in songs and use previous data to predict which song will be popular?
+- Which model would be the best to predict it?
+
 ---
 ## Table of Contents:
 1. [Data Processing](#1-Data-Processing)
@@ -17,9 +23,12 @@ This is a Mini-Project for SC1015 (Introduction to Data Science and Artificial I
 4. [Machine Learning](#4-Machine-Leanring)
 5. [Insights](#5-Clustering)
 6. [Fine Tune Model](#6-Fine-Tuning)
-7. [References](#7-References)
+7. [Models Used](#7-Models-Used)
+8. [Conclusion](#8-Conclusion)
+9. [References](#9-References)
 
 ---
+
 ## Notebooks
 
 We will be using (positive,popular) and (negative,non-popular) interchangeably. 
@@ -50,28 +59,23 @@ Exploring our datasets and check if there is any relation that leads to a song b
 Models taught in SC1015 were utilised here. Use pretrained model Bert to do transfer learning on lyrics to predict if a song will be popular. We also add on to 3.2 by adding other features to the model.
 
 ### 5. Insights
-> 4.1 [Lyrics' effect](https://github.com/emily7lim/B133_Grp9/blob/main/4.1Insights_HowLyricsAffectSongs.ipynb)
+> 5.1 [Lyrics' effect](https://github.com/emily7lim/B133_Grp9/blob/main/4.1Insights_HowLyricsAffectSongs.ipynb)
 
 Determine the effect that lyrics-only have on deciding if a song is popular. 
-> 4.2 [Change Feature: Energy](https://github.com/emily7lim/B133_Grp9/blob/main/4.2Insights_HowOneFeatureAffectPopularity_Energy.ipynb)
+> 5.2 [Change Feature: Energy](https://github.com/emily7lim/B133_Grp9/blob/main/4.2Insights_HowOneFeatureAffectPopularity_Energy.ipynb)
         
 Selecting a random feature, energy to determine if changing only one will affect the prediction.
-> 4.3 [Change Feature: Liveness](https://github.com/emily7lim/B133_Grp9/blob/main/4.2Insights_HowOneFeatureAffectPopularity_Liveness.ipynb)
+> 5.3 [Change Feature: Liveness](https://github.com/emily7lim/B133_Grp9/blob/main/4.2Insights_HowOneFeatureAffectPopularity_Liveness.ipynb)
 
 Selecting another feature, liveness to determine if changing only one will affect the prediction.
 ### 6. Fine-tuning model
-> 5.1 [Removing Dropout](https://github.com/emily7lim/B133_Grp9/blob/main/5.1HowDropoutAffectModels.ipynb)
+> 6.1 [Removing Dropout](https://github.com/emily7lim/B133_Grp9/blob/main/5.1HowDropoutAffectModels.ipynb)
     
 This notebook is similar to 3.3 except that we removed the dropout here to see how dropout layers can increase the models' performance
-> 5.2 [Learning Rate](https://github.com/emily7lim/B133_Grp9/blob/main/5.2HowLearningRateAffectModels.ipynb)
+> 6.2 [Learning Rate](https://github.com/emily7lim/B133_Grp9/blob/main/5.2HowLearningRateAffectModels.ipynb)
 
 This notebook is similar to 3.2 except that the learning rate is 1e-5 to see how learning rate  affect the  training process
 
-
-## Problem Definition
-
-- Are we able to analyze trends in songs and use previous data to predict which song will be popular?
-- Which model would be the best to predict it?
 
 ## Models Used
 
