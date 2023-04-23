@@ -12,11 +12,11 @@ This is a Mini-Project for SC1015 (Introduction to Data Science and Artificial I
 
 For detailed walkthrough, please view the source code in order from:
 
-1. [Data Processing](https://github.com/emily7lim/B133_Grp9/blob/main/DataProcessing.ipynb)
+1. [Data Processing](https://github.com/emily7lim/B133_Grp9/blob/main/1DataProcessing.ipynb)
 
 2. Data Visualisation
-    - 2.1  [EDA](https://github.com/emily7lim/B133_Grp9/blob/main/EDA.ipynb)
-    - 2.2  [Dimension Reduction](https://github.com/emily7lim/B133_Grp9/blob/main/EDA_dimensionReduction.ipynb)
+    - 2.1  [EDA](https://github.com/emily7lim/B133_Grp9/blob/main/2.1EDA.ipynb)
+    - 2.2  [Dimension Reduction](https://github.com/emily7lim/B133_Grp9/blob/main/2.2EDA_dimensionReduction.ipynb)
 
 3. Machine Learning
     - 3.1 [Classic]()
