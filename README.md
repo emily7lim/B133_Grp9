@@ -45,17 +45,17 @@ For detailed walkthrough, please view the source code in order from:
         Determine the effect that lyrics-only have on deciding if a song is popular. 
     - 4.2 [Change Feature: Energy](https://github.com/emily7lim/B133_Grp9/blob/main/4.2Insights_HowOneFeatureAffectPopularity_Energy.ipynb)
         
-        Selecting a random feature, energy, to determine if changing only one will affect the prediction.
+        Selecting a random feature, energy to determine if changing only one will affect the prediction.
     - 4.3 [Change Feature: Liveness](https://github.com/emily7lim/B133_Grp9/blob/main/4.2Insights_HowOneFeatureAffectPopularity_Liveness.ipynb)
 
-        Selecting another feature, liveness, to determine if changing only one will affect the prediction.
+        Selecting another feature, liveness to determine if changing only one will affect the prediction.
 5. Fine-tuning model
     - 5.1 [Removing Dropout](https://github.com/emily7lim/B133_Grp9/blob/main/5.1HowDropoutAffectModels.ipynb)
     
-        This notebook is similar to 3.3 except that we removed the dropout here.
+        This notebook is similar to 3.3 except that we removed the dropout here to see how dropout layers can increase the models' performance
     - 5.2 [Learning Rate](https://github.com/emily7lim/B133_Grp9/blob/main/5.2HowLearningRateAffectModels.ipynb)
 
-        This notebook is similar to 3.2 except that the learning rate is 1e-5
+        This notebook is similar to 3.2 except that the learning rate is 1e-5 to see how learning raate  affect the  training process
 
 ## Contributors
 
