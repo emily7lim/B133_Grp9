@@ -117,9 +117,9 @@ This notebook is similar to 3.2 except that the learning rate is 1e-5 to see how
 
 ### Contributors
 
-- @EricFan2002
-- @serenawjw
-- @emily7lim
+- @EricFan2002 EDA, Bert Model, Fine Tuning, tSNE, Data Processing
+- @serenawjw EDA, Classic Model, tSNE, Data Processing
+- @emily7lim EDA, Classic Model, tSNE, Data Processing
 
 ### 8. References
 
