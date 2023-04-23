@@ -19,12 +19,19 @@ For detailed walkthrough, please view the source code in order from:
     - 2.2  [Dimension Reduction](https://github.com/emily7lim/B133_Grp9/blob/main/2.2EDA_dimensionReduction.ipynb)
 
 3. Machine Learning
-    - 3.1 [Classic]()
-    - 3.2 [Bert Only Baseline]()
-    - 3.3 [Bert and Other Featres]()
+    - 3.1 [Classic](https://github.com/emily7lim/B133_Grp9/blob/main/3.1MachineLearning.ipynb)
+    - 3.2 [Bert Only Baseline](https://github.com/emily7lim/B133_Grp9/blob/main/3.2BERTOnlyBaselineModel.ipynb)
+    - 3.3 [Bert and Other Features](https://github.com/emily7lim/B133_Grp9/blob/main/3.3BERTAndOtherFeaturesModel.ipynb)
 
-4. [Change of Learning Rate]()
-  
+4. Insights
+    - 4.1 [Lyrics' effect](https://github.com/emily7lim/B133_Grp9/blob/main/4.1Insights_HowLyricsAffectSongs.ipynb)
+    - 4.2 [Change Feature: Energy](https://github.com/emily7lim/B133_Grp9/blob/main/4.2Insights_HowOneFeatureAffectPopularity_Energy.ipynb)
+    - 4.3 [Change Feature: Liveness](https://github.com/emily7lim/B133_Grp9/blob/main/4.2Insights_HowOneFeatureAffectPopularity_Liveness.ipynb)
+
+5. Fine-tuning model
+    - 5.1 [Removing Dropout](https://github.com/emily7lim/B133_Grp9/blob/main/5.1HowDropoutAffectModels.ipynb)
+    - 5.2 [Learning Rate](https://github.com/emily7lim/B133_Grp9/blob/main/5.2HowLearningRateAffectModels.ipynb)
+
 ## Contributors
 
 - @EricFan2002
