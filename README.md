@@ -49,7 +49,7 @@ Obtaining dataset from kaggle and spotify API. Preparing positive and negative d
 
 Exploring our datasets and check if there is any relation that leads to a song being popular.
 
-> 2.2 [EDA based on Dimension Reduction](https://github.com/emily7lim/B133_Grp9/blob/main/2.2EDA_dimensionReduction.ipynb)
+> 2.2 [EDA based on Dimension Reduction](https://github.com/emily7lim/B133_Grp9/blob/main/2.2DimensionReduction.ipynb)
         
 Use tSNE and Davies Bouldin Score to better measure the relationship between features and popularity.
  
@@ -60,34 +60,34 @@ Use tSNE and Davies Bouldin Score to better measure the relationship between fea
 
 We started with classic machine learning models such as svm, logistic regression, random forest and decision tree to build the prediction model.
 
-> 3.2 [Bert Only Baseline Model](https://github.com/emily7lim/B133_Grp9/blob/main/3.2BERTOnlyBaselineModel.ipynb)
+> 3.2 [Bert Only Baseline Model](https://github.com/emily7lim/B133_Grp9/blob/main/3.2BaselineBERT.ipynb)
 
 However, we are not completely satisfied with it, we want a better model. Hence, we attempted to use lyrics data and NLP methods to obtain a more accurate model. 
 
 To construct a baseline model, we employed Bert exclusively to predict whether a song would become popular or not. Our model consists of a DistilBert model combined with MLP layer, followed by a sigmoid function and BCELoss.
 
-> 3.3 [Bert and Other Features Prediction Model](https://github.com/emily7lim/B133_Grp9/blob/main/3.3BERTAndOtherFeaturesModel.ipynb)
+> 3.3 [Bert and Other Features Prediction Model](https://github.com/emily7lim/B133_Grp9/blob/main/3.3BERT.ipynb)
 
 After establishing the baseline model, we sought to create a model that would leverage both lyrics and additional data. Our new model, hence, will concatenates the output from Bert with other features, enabling a more comprehensive prediction of song popularity.
 
 ### 4. Data Driven Insights
-> 4.1 [Lyrics' effect](https://github.com/emily7lim/B133_Grp9/blob/main/4.1Insights_HowLyricsAffectSongs.ipynb)
+> 4.1 [Lyrics' effect](https://github.com/emily7lim/B133_Grp9/blob/main/4.1Insights_LyricsVSSong.ipynb)
 
 Determine the effect that lyrics-only have on deciding if a song is popular. 
-> 4.2 [Does one feature have an impact on the entire song: Energy](https://github.com/emily7lim/B133_Grp9/blob/main/4.2Insights_HowOneFeatureAffectPopularity_Energy.ipynb)
+> 4.2 [Does one feature have an impact on the entire song: Energy](https://github.com/emily7lim/B133_Grp9/blob/main/4.2Insights_EnergyVSPopularity.ipynb)
         
 Selecting a random feature, energy to determine if changing only one will affect the prediction.
 
-> 4.3 [Does one feature have an impact on the entire song: Liveness](https://github.com/emily7lim/B133_Grp9/blob/main/4.2Insights_HowOneFeatureAffectPopularity_Liveness.ipynb)
+> 4.3 [Does one feature have an impact on the entire song: Liveness](https://github.com/emily7lim/B133_Grp9/blob/main/4.2Insights_LivenessVSPopularity.ipynb)
 
 Selecting another feature, liveness to determine if changing only one will affect the prediction.
 
 ### 5. Fine-tuning model
-> 5.1 [How Dropout affect model training](https://github.com/emily7lim/B133_Grp9/blob/main/5.1HowDropoutAffectModels.ipynb)
+> 5.1 [How Dropout affect model training](https://github.com/emily7lim/B133_Grp9/blob/main/5.1Rec_DropoutVSModel.ipynb)
     
 This notebook is similar to 3.3 except that we removed the dropout here to see how dropout layers can increase the models' performance.
 
-> 5.2 [How Learning Rate affect model training](https://github.com/emily7lim/B133_Grp9/blob/main/5.2HowLearningRateAffectModels.ipynb)
+> 5.2 [How Learning Rate affect model training](https://github.com/emily7lim/B133_Grp9/blob/main/5.2Rec_LearningRateVSModel.ipynb)
 
 This notebook is similar to 3.2 except that the learning rate is 1e-5 to see how learning rate  affect the  training process.
 
