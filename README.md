@@ -14,7 +14,7 @@ This is a Mini-Project for SC1015 (Introduction to Data Science and Artificial I
 ## Table of Contents:
 1. [Data Fetching and Cleaning](#1-Data-Fetching-and-Cleaning)
 2. [Exploratory Data Analysis](#2-Exploratory-Data-Analysis)
-3. [Machine Learning](#3-Machine-Leanring)
+3. [Machine Learning](#3-Machine-Learning)
 4. [Data Driven Insights](#4-Data-Driven-Insights)
 5. [Fine Tune Model](#5-Fine-Tuning-model)
 6. [Models Used](#6-Models-Used)
