@@ -14,12 +14,12 @@ This is a Mini-Project for SC1015 (Introduction to Data Science and Artificial I
 ## Table of Contents:
 1. [Data Fetching and Cleaning](#1-Data-Fetching-and-Cleaning)
 2. [Exploratory Data Analysis](#2-Exploratory-Data-Analysis)
-3. [Machine Learning](#4-Machine-Leanring)
-5. [Data Driven Insights](#5-Data-Driven-Insights)
-6. [Fine Tune Model](#5-Fine-Tuning-model)
-7. [Models Used](#7-Models-Used)
-8. [Conclusion](#8-Conclusion)
-9. [References](#9-References)
+3. [Machine Learning](#3-Machine-Leanring)
+4. [Data Driven Insights](#4-Data-Driven-Insights)
+5. [Fine Tune Model](#5-Fine-Tuning-model)
+6. [Models Used](#6-Models-Used)
+7. [Conclusion](#7-Conclusion)
+8. [References](#8-References)
 
 ---
 
@@ -120,7 +120,7 @@ This notebook is similar to 3.2 except that the learning rate is 1e-5 to see how
 - @serenawjw
 - @emily7lim
 
-### 9. References
+### 8. References
 
 - https://developer.spotify.com/documentation/web-api/reference/get-audio-features
 - https://huggingface.co/distilbert-base-uncased
