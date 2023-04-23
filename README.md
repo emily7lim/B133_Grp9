@@ -13,10 +13,10 @@ This is a Mini-Project for SC1015 (Introduction to Data Science and Artificial I
 ## Table of Contents:
 1. [Data Processing](#1-Data-Processing)
 2. [Data Visualisation](#2-Data-Visualisation)
-3. [Exploratory Data Analysis](#3-Exploratory-Data-Analysis)
-4. [Dimensionality Reduction](#4-Dimensionality-Reduction)
-5. [Clustering](#5-Clustering)
-6. [Data Driven Insights and Conclusion](#6-Data-Driven-Insights-and-Conclusion)
+3. [Dimensionality Reduction](#3-Dimensionality-Reduction)
+4. [Machine Learning](#4-Machine-Leanring)
+5. [Insights](#5-Clustering)
+6. [Fine Tune Model](#6-Fine-Tuning)
 7. [References](#7-References)
 
 ---
@@ -30,48 +30,43 @@ For detailed walkthrough, please view the source code in order from:
 
 Obtaining dataset from kaggle and spotify API. Preparing positive and negative data to be merged by extracting necessary features
 
-2. Data Visualisation
-    - 2.1  [EDA](https://github.com/emily7lim/B133_Grp9/blob/main/2.1EDA.ipynb)
+### 2. [Data Visualisation](https://github.com/emily7lim/B133_Grp9/blob/main/2.1EDA.ipynb) 
 
-        Exploring our datasets and check if there is any relation that leads to a song being popular
-    - 2.2  [Dimension Reduction](https://github.com/emily7lim/B133_Grp9/blob/main/2.2EDA_dimensionReduction.ipynb)
+Exploring our datasets and check if there is any relation that leads to a song being popular.
 
-        Use tSNE and Davies Bouldin Score to better measure the relationship between features and popularity.
+### 3. [Dimension Reduction](https://github.com/emily7lim/B133_Grp9/blob/main/2.2EDA_dimensionReduction.ipynb)
 
-3. Machine Learning
-    - 3.1 [Classic](https://github.com/emily7lim/B133_Grp9/blob/main/3.1MachineLearning.ipynb)
+ Use tSNE and Davies Bouldin Score to better measure the relationship between features and popularity.
 
-        Models taught in SC1015 were utilised here.
-    - 3.2 [Bert Only Baseline](https://github.com/emily7lim/B133_Grp9/blob/main/3.2BERTOnlyBaselineModel.ipynb)
+### 4. Machine Learning
 
-        Use pretrained model Bert to do transfer learning on lyrics to predict if a song will be popular.
-    - 3.3 [Bert and Other Features](https://github.com/emily7lim/B133_Grp9/blob/main/3.3BERTAndOtherFeaturesModel.ipynb)
+> 4.1 [Classic](https://github.com/emily7lim/B133_Grp9/blob/main/3.1MachineLearning.ipynb) 
 
-        Add on to 3.2 by adding other features to the model.
+> 4.2 [Bert Only Baseline](https://github.com/emily7lim/B133_Grp9/blob/main/3.2BERTOnlyBaselineModel.ipynb)
 
-4. Insights
-    - 4.1 [Lyrics' effect](https://github.com/emily7lim/B133_Grp9/blob/main/4.1Insights_HowLyricsAffectSongs.ipynb)
+> 4.3 [Bert and Other Features](https://github.com/emily7lim/B133_Grp9/blob/main/3.3BERTAndOtherFeaturesModel.ipynb)
 
-        Determine the effect that lyrics-only have on deciding if a song is popular. 
-    - 4.2 [Change Feature: Energy](https://github.com/emily7lim/B133_Grp9/blob/main/4.2Insights_HowOneFeatureAffectPopularity_Energy.ipynb)
         
-        Selecting a random feature, energy to determine if changing only one will affect the prediction.
-    - 4.3 [Change Feature: Liveness](https://github.com/emily7lim/B133_Grp9/blob/main/4.2Insights_HowOneFeatureAffectPopularity_Liveness.ipynb)
+Models taught in SC1015 were utilised here. Use pretrained model Bert to do transfer learning on lyrics to predict if a song will be popular. We also add on to 3.2 by adding other features to the model.
 
-        Selecting another feature, liveness to determine if changing only one will affect the prediction.
-5. Fine-tuning model
-    - 5.1 [Removing Dropout](https://github.com/emily7lim/B133_Grp9/blob/main/5.1HowDropoutAffectModels.ipynb)
+### 5. Insights
+> 4.1 [Lyrics' effect](https://github.com/emily7lim/B133_Grp9/blob/main/4.1Insights_HowLyricsAffectSongs.ipynb)
+
+Determine the effect that lyrics-only have on deciding if a song is popular. 
+> 4.2 [Change Feature: Energy](https://github.com/emily7lim/B133_Grp9/blob/main/4.2Insights_HowOneFeatureAffectPopularity_Energy.ipynb)
+        
+Selecting a random feature, energy to determine if changing only one will affect the prediction.
+> 4.3 [Change Feature: Liveness](https://github.com/emily7lim/B133_Grp9/blob/main/4.2Insights_HowOneFeatureAffectPopularity_Liveness.ipynb)
+
+Selecting another feature, liveness to determine if changing only one will affect the prediction.
+### 6. Fine-tuning model
+> 5.1 [Removing Dropout](https://github.com/emily7lim/B133_Grp9/blob/main/5.1HowDropoutAffectModels.ipynb)
     
-        This notebook is similar to 3.3 except that we removed the dropout here to see how dropout layers can increase the models' performance
-    - 5.2 [Learning Rate](https://github.com/emily7lim/B133_Grp9/blob/main/5.2HowLearningRateAffectModels.ipynb)
+This notebook is similar to 3.3 except that we removed the dropout here to see how dropout layers can increase the models' performance
+> 5.2 [Learning Rate](https://github.com/emily7lim/B133_Grp9/blob/main/5.2HowLearningRateAffectModels.ipynb)
 
-        This notebook is similar to 3.2 except that the learning rate is 1e-5 to see how learning raate  affect the  training process
+This notebook is similar to 3.2 except that the learning rate is 1e-5 to see how learning rate  affect the  training process
 
-## Contributors
-
-- @EricFan2002
-- @serenawjw
-- @emily7lim
 
 ## Problem Definition
 
@@ -100,7 +95,13 @@ Obtaining dataset from kaggle and spotify API. Preparing positive and negative d
 - Merging of multiple datasets help to enrich data and enhance model
 - Having a high learning rate does not necessarily lead to a better result as overfitting may occur.
 
-## References
+## Contributors
+
+- @EricFan2002
+- @serenawjw
+- @emily7lim
+
+### 7. References
 
 - https://developer.spotify.com/documentation/web-api/reference/get-audio-features
 - https://huggingface.co/distilbert-base-uncased
