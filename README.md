@@ -1,4 +1,5 @@
 # Welcome to spotify-analysis repository
+**Please download notebook for better viewing as links are not clickable in github
 
 ## About
 
