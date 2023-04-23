@@ -9,16 +9,26 @@ This is a Mini-Project for SC1015 (Introduction to Data Science and Artificial I
 2. This dataset consists of [lyrics](https://www.kaggle.com/datasets/nikhilnayak123/5-million-song-lyrics-dataset) from kaggle dataset. 
 
 3. This dataset consist of [popular songs](https://www.kaggle.com/datasets/dhruvildave/spotify-charts) which were in viral50 and top200.
+---
+## Table of Contents:
+1. [Data Processing](#1-Data-Processing)
+2. [Data Visualisation](#2-Data-Visualisation)
+3. [Exploratory Data Analysis](#3-Exploratory-Data-Analysis)
+4. [Dimensionality Reduction](#4-Dimensionality-Reduction)
+5. [Clustering](#5-Clustering)
+6. [Data Driven Insights and Conclusion](#6-Data-Driven-Insights-and-Conclusion)
+7. [References](#7-References)
 
+---
 ## Notebooks
 
 We will be using (positive,popular) and (negative,non-popular) interchangeably. 
 
 For detailed walkthrough, please view the source code in order from:
 
-1. [Data Processing](https://github.com/emily7lim/B133_Grp9/blob/main/1DataProcessing.ipynb)
-    
-    Obtaining dataset from kaggle and spotify API. Preparing positive and negative data to be merged by extracting necessary features
+### 1. [Data Processing](https://github.com/emily7lim/B133_Grp9/blob/main/1DataProcessing.ipynb)
+
+Obtaining dataset from kaggle and spotify API. Preparing positive and negative data to be merged by extracting necessary features
 
 2. Data Visualisation
     - 2.1  [EDA](https://github.com/emily7lim/B133_Grp9/blob/main/2.1EDA.ipynb)
