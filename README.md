@@ -16,7 +16,7 @@ This is a Mini-Project for SC1015 (Introduction to Data Science and Artificial I
 - Which model would be the best to predict it?
 
 ---
-## Table of Contents:
+### Table of Contents:
 1. [Data Processing](#1-Data-Processing)
 2. [Data Visualisation](#2-Data-Visualisation)
 3. [Dimensionality Reduction](#3-Dimensionality-Reduction)
@@ -29,7 +29,7 @@ This is a Mini-Project for SC1015 (Introduction to Data Science and Artificial I
 
 ---
 
-## Notebooks
+### Notebooks
 
 We will be using (positive,popular) and (negative,non-popular) interchangeably. 
 
@@ -77,7 +77,7 @@ This notebook is similar to 3.3 except that we removed the dropout here to see h
 This notebook is similar to 3.2 except that the learning rate is 1e-5 to see how learning rate  affect the  training process
 
 
-## Models Used
+### 7. Models Used
 
 1. Logistic Regression
 2. SVM
@@ -85,13 +85,13 @@ This notebook is similar to 3.2 except that the learning rate is 1e-5 to see how
 4. Decision Tree
 5. BERT
 
-## Conclusion
+### 8. Conclusion
 
 - Lyrics play a crucial role in determining a song's popularity. 
 - A successful song is not determined by only one feature but consists of many features such as loudness, energy, acousticness etc.
 - Using lyrics, features and Bert as a model achieved the best result.
 
-## What did we learn from this project?
+### What did we learn from this project?
 
 - Identifying the optimal learning rate is crucial
 - Early stopping is essential
@@ -99,13 +99,13 @@ This notebook is similar to 3.2 except that the learning rate is 1e-5 to see how
 - Merging of multiple datasets help to enrich data and enhance model
 - Having a high learning rate does not necessarily lead to a better result as overfitting may occur.
 
-## Contributors
+### Contributors
 
 - @EricFan2002
 - @serenawjw
 - @emily7lim
 
-### 7. References
+### 9. References
 
 - https://developer.spotify.com/documentation/web-api/reference/get-audio-features
 - https://huggingface.co/distilbert-base-uncased
