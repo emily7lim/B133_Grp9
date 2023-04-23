@@ -8,84 +8,99 @@ This is a Mini-Project for SC1015 (Introduction to Data Science and Artificial I
 
 2. This dataset consists of [lyrics](https://www.kaggle.com/datasets/nikhilnayak123/5-million-song-lyrics-dataset) from kaggle dataset. 
 
-3. This dataset consist of [popular songs](https://www.kaggle.com/datasets/dhruvildave/spotify-charts) which were in viral50 and top200.
-
-## Problem Definition
-
-- Are we able to analyze trends in songs and use previous data to predict which song will be popular?
-- Which model would be the best to predict it?
+3. This dataset consist of [Spotify popular songs](https://www.kaggle.com/datasets/dhruvildave/spotify-charts) which contains viral50 and top200 songs on Spotify.
 
 ---
-### Table of Contents:
-1. [Data Processing](#1-Data-Processing)
-2. [Data Visualisation](#2-Data-Visualisation)
-3. [Dimensionality Reduction](#3-Dimensionality-Reduction)
-4. [Machine Learning](#4-Machine-Leanring)
-5. [Insights](#5-Clustering)
-6. [Fine Tune Model](#6-Fine-Tuning)
+## Table of Contents:
+1. [Data Fetching and Cleaning](#1-Data-Fetching-and-Cleaning)
+2. [Exploratory Data Analysis](#2-Exploratory-Data-Analysis)
+3. [Machine Learning](#4-Machine-Leanring)
+5. [Data Driven Insights](#5-Data-Driven-Insights)
+6. [Fine Tune Model](#5-Fine-Tuning-model)
 7. [Models Used](#7-Models-Used)
 8. [Conclusion](#8-Conclusion)
 9. [References](#9-References)
 
 ---
 
-### Notebooks
+## Problem Definition
+
+**The Dataset**: [Spotify popular songs](https://www.kaggle.com/datasets/dhruvildave/spotify-charts) which contains viral50 and top200 songs on Spotify.
+
+**Our Question**: Each day, countless songs are released on Spotify. It makes us wonder what songs get popular in a day, and stay up in the trending chart for days? Is it the lyrics, the unique elements of the songs, luck or publication from social media that makes a song stand out? We were intrigued by this question. Therefore, our project's goal is to create a classification model to determine if a song will be on trend, which would help musicians produce more popular and applealing music.
+
+
+## Notebooks
 
 We will be using (positive,popular) and (negative,non-popular) interchangeably. 
 
 For detailed walkthrough, please view the source code in order from:
 
-### 1. [Data Processing](https://github.com/emily7lim/B133_Grp9/blob/main/1DataProcessing.ipynb)
+### 1. Data Fetching and Cleaning
+
+> 1.1 [Data Fetching and Cleaning](https://github.com/emily7lim/B133_Grp9/blob/main/1DataProcessing.ipynb) 
 
 Obtaining dataset from kaggle and spotify API. Preparing positive and negative data to be merged by extracting necessary features
 
-### 2. [Data Visualisation](https://github.com/emily7lim/B133_Grp9/blob/main/2.1EDA.ipynb) 
+### 2. Exploratory Data Analysis
+
+> 2.1 [EDA](https://github.com/emily7lim/B133_Grp9/blob/main/2.1EDA.ipynb)
 
 Exploring our datasets and check if there is any relation that leads to a song being popular.
 
-### 3. [Dimension Reduction](https://github.com/emily7lim/B133_Grp9/blob/main/2.2EDA_dimensionReduction.ipynb)
-
- Use tSNE and Davies Bouldin Score to better measure the relationship between features and popularity.
-
-### 4. Machine Learning
-
-> 4.1 [Classic](https://github.com/emily7lim/B133_Grp9/blob/main/3.1MachineLearning.ipynb) 
-
-> 4.2 [Bert Only Baseline](https://github.com/emily7lim/B133_Grp9/blob/main/3.2BERTOnlyBaselineModel.ipynb)
-
-> 4.3 [Bert and Other Features](https://github.com/emily7lim/B133_Grp9/blob/main/3.3BERTAndOtherFeaturesModel.ipynb)
-
+> 2.2 [EDA based on Dimension Reduction](https://github.com/emily7lim/B133_Grp9/blob/main/2.2EDA_dimensionReduction.ipynb)
         
-Models taught in SC1015 were utilised here. Use pretrained model Bert to do transfer learning on lyrics to predict if a song will be popular. We also add on to 3.2 by adding other features to the model.
+Use tSNE and Davies Bouldin Score to better measure the relationship between features and popularity.
+ 
 
-### 5. Insights
-> 5.1 [Lyrics' effect](https://github.com/emily7lim/B133_Grp9/blob/main/4.1Insights_HowLyricsAffectSongs.ipynb)
+### 3. Machine Learning
+
+> 3.1 [Classic Models](https://github.com/emily7lim/B133_Grp9/blob/main/3.1MachineLearning.ipynb) 
+
+We started with classic machine learning models such as svm, logistic regression, random forest and decision tree to build the prediction model.
+
+> 3.2 [Bert Only Baseline Model](https://github.com/emily7lim/B133_Grp9/blob/main/3.2BERTOnlyBaselineModel.ipynb)
+
+However, we are not completely satisfied with it, we want a better model. Hence, we attempted to use lyrics data and NLP methods to obtain a more accurate model. 
+
+To construct a baseline model, we employed Bert exclusively to predict whether a song would become popular or not. Our model consists of a DistilBert model combined with MLP layer, followed by a sigmoid function and BCELoss.
+
+> 3.3 [Bert and Other Features Prediction Model](https://github.com/emily7lim/B133_Grp9/blob/main/3.3BERTAndOtherFeaturesModel.ipynb)
+
+After establishing the baseline model, we sought to create a model that would leverage both lyrics and additional data. Our new model, hence, will concatenates the output from Bert with other features, enabling a more comprehensive prediction of song popularity.
+
+### 4. Data Driven Insights
+> 4.1 [Lyrics' effect](https://github.com/emily7lim/B133_Grp9/blob/main/4.1Insights_HowLyricsAffectSongs.ipynb)
 
 Determine the effect that lyrics-only have on deciding if a song is popular. 
-> 5.2 [Change Feature: Energy](https://github.com/emily7lim/B133_Grp9/blob/main/4.2Insights_HowOneFeatureAffectPopularity_Energy.ipynb)
+> 4.2 [Does one feature have an impact on the entire song: Energy](https://github.com/emily7lim/B133_Grp9/blob/main/4.2Insights_HowOneFeatureAffectPopularity_Energy.ipynb)
         
 Selecting a random feature, energy to determine if changing only one will affect the prediction.
-> 5.3 [Change Feature: Liveness](https://github.com/emily7lim/B133_Grp9/blob/main/4.2Insights_HowOneFeatureAffectPopularity_Liveness.ipynb)
+
+> 4.3 [Does one feature have an impact on the entire song: Liveness](https://github.com/emily7lim/B133_Grp9/blob/main/4.2Insights_HowOneFeatureAffectPopularity_Liveness.ipynb)
 
 Selecting another feature, liveness to determine if changing only one will affect the prediction.
-### 6. Fine-tuning model
-> 6.1 [Removing Dropout](https://github.com/emily7lim/B133_Grp9/blob/main/5.1HowDropoutAffectModels.ipynb)
+
+### 5. Fine-tuning model
+> 5.1 [How Dropout affect model training](https://github.com/emily7lim/B133_Grp9/blob/main/5.1HowDropoutAffectModels.ipynb)
     
-This notebook is similar to 3.3 except that we removed the dropout here to see how dropout layers can increase the models' performance
-> 6.2 [Learning Rate](https://github.com/emily7lim/B133_Grp9/blob/main/5.2HowLearningRateAffectModels.ipynb)
+This notebook is similar to 3.3 except that we removed the dropout here to see how dropout layers can increase the models' performance.
 
-This notebook is similar to 3.2 except that the learning rate is 1e-5 to see how learning rate  affect the  training process
+> 5.2 [How Learning Rate affect model training](https://github.com/emily7lim/B133_Grp9/blob/main/5.2HowLearningRateAffectModels.ipynb)
+
+This notebook is similar to 3.2 except that the learning rate is 1e-5 to see how learning rate  affect the  training process.
 
 
-### 7. Models Used
+### 6. Models Used
 
 1. Logistic Regression
 2. SVM
 3. Random Forest
 4. Decision Tree
 5. BERT
+6. BERT+MLP
 
-### 8. Conclusion
+### 7. Conclusion
 
 - Lyrics play a crucial role in determining a song's popularity. 
 - A successful song is not determined by only one feature but consists of many features such as loudness, energy, acousticness etc.
